@@ -1,0 +1,16 @@
+name: publish-gh-pages
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Deploy Docs to github-pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: 'aͫnͥ'
+          folder: /
+          clean: true
