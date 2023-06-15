@@ -1,8 +1,9 @@
 name: publish-gh-pages
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - 'aͫnͥ'
 
 jobs:
   deploy:
